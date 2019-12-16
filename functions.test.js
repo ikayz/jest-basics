@@ -9,3 +9,8 @@ test('Adds 2 + 2 equal to 4', () => {
 test('Adds 2 + 2 equal to not 5', () => {
   expect(functions.add(2, 2)).not.toBe(5);
 });
+
+// Should be null
+test('Should be null', () => {
+  expect(functions.isNull()).toBeNull();
+});
