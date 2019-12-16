@@ -20,10 +20,19 @@ test('Should be a falsy value', () => {
   expect(functions.checkValue(0)).toBeFalsy();
 });
 
-// Check for object
+// Check for object toEqual
 test('Should be an object', () => {
   expect(functions.createUser()).toEqual({
     firstName: 'Isaac',
     lastName: 'Miti'
   });
 });
+
+// Check weight to be than toBeLessThan
+test('Should be less than 1200', () => {
+  const weight1 = 600;
+  const weight2 = 500;
+  expect(weight1 + weight2).toBeLessThan(1200);
+});
+
+
