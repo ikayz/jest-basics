@@ -35,4 +35,13 @@ test('Should be less than 1200', () => {
   expect(weight1 + weight2).toBeLessThan(1200);
 });
 
+// Regex test
+test('There is no e in Isaac', () => {
+  expect('Isaac').not.toMatch(/e/);
+});
 
+//Arrays
+test('Admin should be in the usernames', () => {
+  names = ['Isaac', 'Ikayz', 'Admin'];
+  expect(names).toContain('Admin');
+});
