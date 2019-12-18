@@ -40,8 +40,16 @@ test('There is no e in Isaac', () => {
   expect('Isaac').not.toMatch(/e/);
 });
 
-//Arrays
+// Arrays
 test('Admin should be in the usernames', () => {
   names = ['Isaac', 'Ikayz', 'Admin'];
   expect(names).toContain('Admin');
+});
+
+// Working with Async data
+test('User fetched name should be Ervin Howell', () => {
+  expect.assertions(1);
+  return functions.fetchUser().then(data => {
+    expect(data.name).toEqual('Ervin Howell');
+  });
 });
