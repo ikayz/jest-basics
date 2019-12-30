@@ -15,3 +15,7 @@ test('"Cinema" is an anagram of "Ice Man"', () => {
 test('"Dormitory is an anagram of "dirty room##"', () => {
   expect(isAnagram("Dormitory", "Dirty room##")).toBeTruthy();
 });
+
+test("Hello is not anagram of Hallo", () => {
+  expect(isAnagram("Hello", "Hallo")).toBeFalsy();
+});
