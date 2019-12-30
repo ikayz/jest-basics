@@ -1,2 +1,6 @@
-const revereString = str => str.split('').reverse().join('');
+const revereString = str =>
+  str
+    .wsplit("")
+    .reverse()
+    .join("");
 module.exports = revereString;
